@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { /*La pseudo-clase :root de selecciona el elemento raíz de un árbol que representa el documento.*/
+    scroll-behavior: smooth; /*Nos permite controlar el comportamiento del scroll*/
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: blue; /*Nos sirve para cambiarle el color a la lista*/
+    text-decoration: none; /*Nos sirve para quitarle es subrayadoa a las palabras de la lista*/
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden; /*Sirve para ocultar todo lo que salga de los margenes de la página*/
+    margin: auto;
+    padding: 60px 0;
+}
+
+header {
+    height: 100vh;
+    background-image: url('../img/Portada.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor.*/
+    background-position: center;
+}
+
+.menuBoton {
+    position: fixed; /*Nos ayuda a que este fijo en toda la página*/
+    background-position: center;
+    top: 30px;
+    right: 30px;
+    cursor: pointer; /*Siempre que pasemos el cursor se pone la manita*/
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to right, #2e97f3 0%, #00f2fe 100%);
+    display: flex;
+    flex-direction: column; /*Para que se ponga una balabra debajo de otra*/
+    justify-content: space-evenly; /*Para que reparta espacio entre las palabras verticalmente*/
+    align-items: center;
+    /*transition: transform .3s ease-in-out;*/
+    transform: translate(110%); /*Usando transform, los elementos pueden ser trasladados, rotados, escalados o sesgados de acuerdo a los valores establecidos.*/
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread {
+    transform: translate(0); /*Cuando demos click al boton le indicamos que el elemento aparezca otra vez*/
+}
+
+.menu-navegacion a { 
+    color: white;
+    text-decoration: none;
+}
+
+/*Servicio*/
+.subtitulo {
+    text-align: center;
+    font-weight: 300;
+    color: #2e97f3;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-servicio {
+    display: flex;
+    justify-content: space-evenly; /*Espacio equitativo en el eje horizontal*/
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img {
+    width: 40%;
+}
+
+.check-servicio {
+    width: 45%;
+}
+
+.servicio {
+    margin-bottom: 20px;
+}
+
+.n-servicio {
+    margin-bottom: 7px;
+    color:  #2e97f3;
+}
+
+.numero {
+    display: inline-block;
+    background-image: linear-gradient(to right, #2e97f3 0%, #00f2fe 100%);
+    width: 30px;
+    height: 30px;
+    color: black;
+    text-align: center;
+    border-radius: 50%; /*Redondea*/
+    font-weight: 700;
+    line-height: 30px; /*Centra los números dentro del cierculo en el apartado (Buestros Servicios)*/
+    margin-right: 5px; /*Separa la palabra del circulo con el número*/
+}
+
+.galeria {
+    background: rgba(0, 0, 0, .5);;
+}
+
+.contenedor-galeria {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria {
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, .5);
+    cursor: pointer; /*Cuando pasamos el mouse por encima de la imagen se pone la manita*/
+}
+
+.img-cerrar {
+    position: fixed;
+    background: rgba(0, 0, 0, .6); /*Da transparencia*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%); /*Se oculta con el translate*/
+    transition: transform .2s ease-in-out; /*Facilidad de entrada - En esta linea lo que nos dice es que va a tardar .2 segundos en pasar la imagen*/
+}
+
+.show {
+    transform: translate(0);
+}
+
+.agregar-imagen {
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImg { /*Esta clase se agrega cuando damos click a la imagen*/
+    transform: scale(1);
+}
+
+.close { /*Icono de cerrar que usaremos para las iamgenes*/
+    position: absolute; /*Se va a fijar*/
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.experts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /*Sirve por si un elemento no cabe en la misma línea que los demás lo manden automaticamente para abajo*/
+}
+
+.cont-expert {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer; /*Siempre que pasemos el cursor se pone la manita*/
+}
+
+.cont-expert img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.n-expert {
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+
+/*Contacto*/
+footer {
+    background: #2e97f3;
+    padding-bottom: 0.1px;
+}
+
+.contacto-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contactos {
+    width: 40%;
+}
+
+.marca {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.marca p {
+    font-weight: 500;
+}
+
+.social {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+
+.social-icon:hover {
+    background: white; /*Es el color que que rellena el circulo del icono cada que pasamos el cursor sobre el*/
+    color: #2e97f3;
+}
+
+.social-icon i {
+    font-size: 30px;
+    line-height: 60px; /*Lo utilizamos para centrar los iconos dentro de los circulos*/
+}
+
+@media screen and (max-width: 800px) { /*Cuando la pantalla este en 800px el menuboton va a aparecer*/
+    .menu-navegacion {
+        width: 50vw;
+    }
+
+.contenedor-servicio img {
+    width: 80%; /*Esto lo ponemos para que acomode la imagen de forma que salga completa en el espacio que tenga libre*/
+    margin-bottom: 40px;
+}
+
+.check-servicio { /*Hace que la lista se acomode de forma que el texto tenga un tipo de justificado*/
+    width: 80%;
+}
+
+.servicio {
+    margin-bottom: 30px;
+}
+
+.agregar-imagen {
+    width: 80%;
+}
+
+.img-galeria {
+    width: 45%;
+}
+
+.cont-expert {
+    width: 80%;
+}
+
+.contacto-content {
+    justify-content: center;
+}
+
+.social {
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.social-icon {
+    margin-left: 0;
+}
+
+.social i {
+    margin-left: 0;
+}
+
+.contactos {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    .menu-navegacion {
+        width: 65vw;
+    }
+
+    .menuBoton {
+        top: 20px;
+        right: 20px;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+    }
+
+    .agregar-imagen {
+        width: 95%;
+    }
+
+    .img-galeria {
+        width: 95%;
+    }
+
+    .social {
+        width: 100%;
+    }
+    .contactos {
+        width: 90%;
+    }
+}
+}
+

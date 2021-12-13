@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href = "https: //fonts.googleapis.com/css2? family = Lato: ital, wght @ 1300 & display = swap "rel =" stylesheet ">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <title>Codeds</title>
+</head>
+<body>
+    
+    <header class="header" id="inicio">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicio</a>
+            <a href="#portafolio">Galeria</a>
+            <a href="#expertos">Especializados</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="menuBoton spread">
+            <i class="fa fa-bars fa-2x"></i>
+        </div>
+    </header>
+    <main> <!--Esta etiqueta nos dice que todo el contenido principal va a ir dentro de ella-->
+        <section class="contenedor" id="servicio">
+                <h2 class="subtitulo">Nuestros Servicios</h2>
+                <div class="contenedor-servicio">
+                   <img src="img/prog.jpg" alt="Programación"> 
+                   <div class="check-servicio">
+                       <div class="servicio">
+                          <h3 class="n-servicio">
+                            <span class="numero">1</span>Sitio web Corporativo<!-- Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea-->
+                          </h3>
+                          <p>Una página web ofreciendo sus productos - 
+                            Desarrollamos su web desde cero o ponemos al día la web que ya tenga,
+                            para que su web sea otra fuente de clientes y de ingresos transmitiendo
+                            seriedad y modernidad a los clientes.</p>
+                       </div>
+                       <div class="servicio">
+                        <h3 class="n-servicio">
+                          <span class="numero">2</span>Catálogo de productos<!-- Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.ww56-->
+                        </h3>
+                        <p>Muestra en la web tu variedad de productos -
+                            Tanto para los clientes habituales como para los que aún no lo son, 
+                            puede mostrarles sus productos o servicios sin la necesidad de que se 
+                            tengan que desplazar a la puerta
+                        </p>
+                     </div>
+                     <div class="servicio">
+                        <h3 class="n-servicio">
+                          <span class="numero">3</span>Tienda Online<!-- Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.ww56-->
+                        </h3>
+                        <p>Vende tus productos las 24h los 365 días -
+                            Es el método ideal para aumentar la facturación no pierdes clientes cuando 
+                            la empresa está cerrada, y los clientes no hace falta que lleguen a tu
+                            negocio, es el producto el que les llega a ellos.
+                        </p>
+                     </div>
+                     <div class="servicio">
+                        <h3 class="n-servicio">
+                          <span class="numero">4</span>Formación online<!-- Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.ww56-->
+                        </h3>
+                        <p>Tus alumnos podrán realizar cursos las 24h -
+                            A través de la plataforma de enseñanza online podrás tener un aula virtual
+                            donde poder realizar todo tipo de cursos online, en apoyo a los
+                            semipresenciales. Los alumnos podrán organizarse su tiempo como mejor les
+                            convenga.</p>
+                     </div>
+                     <div class="servicio">
+                        <h3 class="n-servicio">
+                          <span class="numero">5</span>Landing Page<!-- Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.ww56-->
+                        </h3>
+                        <p>Una página básica y rápida para promociones
+                            Si con una campaña de Marketing online necesitas promocionar un producto o
+                            servicio, una landing page es lo que buscas. En ella se mostrará únicamente
+                            la información de la promoción, evitando distracciones.</p>
+                     </div>
+                     <div class="servicio">
+                        <h3 class="n-servicio">
+                          <span class="numero">6</span>Campaña SEO/SEM<!-- Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.ww56-->
+                        </h3>
+                        <p>Mejoramos notablemente la visibilidad de tu web - 
+                            Primero nos centramos en mejorar el posicionamiento web optimizando el
+                            contenido y las palabras claves elegidas para destacar tu web. Posteriormente
+                            se realiza en Google Adwords una campaña de visibilidad a corto plazo.</p>
+                     </div>
+                   </div>
+                </div>
+        </section>
+        <section class="gallery" id="portafolio">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galería</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/Corporativo.jpg" alt="" class="img-galeria">
+                    <img src="img/Catalogo.jpg" alt="" class="img-galeria">
+                    <img src="img/Tienda.png" alt="" class="img-galeria">
+                    <img src="img/Educacion.jpg" alt="" class="img-galeria">
+                    <img src="img/Landing.png" alt="" class="img-galeria">
+                    <img src="img/SEEOO.png" alt="" class="img-galeria">
+                </div>
+            </div>
+        </section>
+            <section class="img-cerrar">
+                <img src="./img/cerrar.svg" alt="" class="cerrar">
+                <img src="./img/Tienda.png" alt="" class="agregar-imagen">
+            </section>
+            <section class="contenedor" id="expertos">
+                <h2 class="subtitulo">Expertos en:</h2>
+                <section class="experts">
+                    <div class="cont-expert">
+                        <img onclick="PaginaWeb();" src="img/www.png" alt="Desarrollo Web">
+                        <h3 class="n-expert">Desarrollo Web</h3>
+                    </div>
+                    <div class="cont-expert">
+                        <img onclick="SEO();" src="img/1.png" alt="SEO">
+                        <h3 class="n-expert">SEO</h3>
+                    </div>
+                    <div class="cont-expert">
+                        <img onclick="TiendaOnline();" src="img/Online.jpg" alt="Tienda Online">
+                        <h3 class="n-expert">Tienda Online</h3>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer id="contacto">
+            <div class="contenedor contacto-content">
+                    <div class="contactos">
+                        <h2 class="marca">CODEDS</h2>
+                        <p>Somos expertos en el mundo digital.</p>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="social-icon">
+                            <i onclick="Facebook();" class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i onclick="Twitter();" class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i onclick="Instagram();" class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i onclick="Twitch();" class="fab fa-twitch"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i onclick="Linkedin();" class="fab fa-linkedin""></i>
+                        </a>
+                    </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="JS/menu.js"></script> 
+        <script type="text/javascript" src="JS/caja.js"></script> 
+        <script type="text/javascript" src="JS/redes.js"></script>
+        <script type="text/javascript" src="JS/paginas.js"></script>
+</body>
+</html>
